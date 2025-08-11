@@ -18,19 +18,22 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-          <div className="aspect-[16/9] w-full overflow-hidden rounded-xl shadow bg-white">
-            <iframe
-              title="네이버 지도 검색"
-              src="https://m.map.naver.com/search2/search.naver?query=%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90&sm=hty&style=v5"
-              className="w-full h-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-          <div className="text-sm text-foreground-accent">
-            <span>지도가 보이지 않으면 </span>
-            <Link href="https://map.naver.com/v5/search/%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90" target="_blank" className="text-secondary hover:underline">네이버 지도에서 열기</Link>
-            <span>를 눌러주세요.</span>
+          <div className="aspect-[16/9] w-full overflow-hidden rounded-xl shadow bg-white flex items-center justify-center p-4">
+            <div className="w-full max-w-xl">
+              <label className="block text-sm text-foreground-accent mb-2">네이버 지도 검색</label>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <input
+                  type="text"
+                  readOnly
+                  value="예심요양원"
+                  className="flex-1 border rounded-lg px-4 py-3 bg-hero-background text-foreground cursor-default"
+                />
+                <div className="flex gap-2">
+                  <Link href="https://map.naver.com/v5/search/%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90" target="_blank" className="text-white bg-secondary hover:opacity-90 px-5 py-3 rounded-lg text-center">네이버에서 검색</Link>
+                </div>
+              </div>
+              <p className="mt-2 text-xs text-foreground-accent">일부 환경에서는 지도가 iframe으로 표시되지 않을 수 있어 직접 열기 방식을 제공합니다.</p>
+            </div>
           </div>
           <div className="text-foreground-accent">
             <h3 className="text-xl font-semibold text-foreground">주소 및 안내</h3>
