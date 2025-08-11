@@ -24,6 +24,7 @@ body {
   background: var(--background);
   font-family: 'SBAggro', sans-serif;
   font-style: normal;
+  font-weight: 300;
 }
 
 @layer base {
@@ -73,6 +74,17 @@ body {
     /* prod (GitHub Pages with basePath=/yesim) */
     url('/yesim/fonts/SBAggroL.ttf') format('truetype');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Map normal weight(400) to Light file to ensure usage when elements use font-weight: 400 */
+@font-face {
+  font-family: 'SBAggro';
+  src:
+    url('/fonts/SBAggroL.ttf') format('truetype'),
+    url('/yesim/fonts/SBAggroL.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
