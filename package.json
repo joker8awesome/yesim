@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node -e \"const fs=require('fs'); if(fs.existsSync('.next/out')){fs.rmSync('out',{recursive:true,force:true}); fs.renameSync('.next/out','out');}\"",
     "start": "next start",
     "lint": "next lint"
   },
