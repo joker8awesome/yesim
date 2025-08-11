@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={"antialiased font-sans"}>
+      <body className={"antialiased"}>
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
         <main>

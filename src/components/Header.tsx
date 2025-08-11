@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 rounded-full px-3 py-1 nav-pill">
                         <Image src={siteDetails.siteLogo} alt={siteDetails.siteName} width={28} height={28} className="min-w-fit w-7 h-7 object-contain" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer group-hover:text-black">
+                        <span className="text-xl font-semibold text-foreground cursor-pointer group-hover:text-black">
                             {siteDetails.siteName}
                         </span>
                     </Link>

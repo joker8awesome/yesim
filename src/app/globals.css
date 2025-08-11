@@ -27,11 +27,7 @@ body {
   font-weight: 300;
 }
 
-@layer base {
-  html, body {
-    @apply font-sans;
-  }
-}
+/* tailwind base font-family 적용은 사용하지 않음: 커스텀 폰트 강제 */
 
 /* 유틸 클래스: SB 어그로 Bold 강제 적용 */
 .sb-aggro-b {
@@ -49,11 +45,7 @@ body {
   }
 }
 
-.manrope {
-  /* 프로젝트에서 사용하던 보조 클래스: SB 어그로 Light로 통일 */
-  font-family: 'SBAggro', sans-serif;
-  font-style: normal;
-}
+/* 제거: 과거 보조 클래스. 필요 시 개별 컴포넌트에서 지정 */
 
 /* 제목은 기본 상속. 필요한 곳만 font-sbaggro-b 유틸 클래스로 지정 */
 
