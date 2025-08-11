@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import SectionTitle from './SectionTitle';
-import dynamic from 'next/dynamic';
-
-const NaverMap = dynamic(() => import('./NaverMap'), { ssr: false });
 
 const Contact: React.FC = () => {
   return (
@@ -21,8 +18,19 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-          <div className="aspect-[16/9] w-full overflow-hidden rounded-xl shadow">
-            <NaverMap />
+          <div className="aspect-[16/9] w-full overflow-hidden rounded-xl shadow bg-white">
+            <iframe
+              title="네이버 지도 검색"
+              src="https://m.map.naver.com/search2/search.naver?query=%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90&sm=hty&style=v5"
+              className="w-full h-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <div className="text-sm text-foreground-accent">
+            <span>지도가 보이지 않으면 </span>
+            <Link href="https://map.naver.com/v5/search/%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90" target="_blank" className="text-secondary hover:underline">네이버 지도에서 열기</Link>
+            <span>를 눌러주세요.</span>
           </div>
           <div className="text-foreground-accent">
             <h3 className="text-xl font-semibold text-foreground">주소 및 안내</h3>
