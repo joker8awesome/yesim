@@ -33,6 +33,7 @@ jobs:
       - name: Build static site
         env:
           BASE_PATH: '/yesim'
+          NEXT_PUBLIC_NAVER_MAPS_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_NAVER_MAPS_CLIENT_ID }}
         run: |
           npm run build
           if [ ! -d "out" ] && [ -d ".next/out" ]; then mv .next/out out; fi
