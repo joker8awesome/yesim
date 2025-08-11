@@ -34,7 +34,7 @@ jobs:
           BASE_PATH: '/yesim'
         run: |
           npm run build
-          npx next export -o out
+          if [ ! -d "out" ] && [ -d ".next/out" ]; then mv .next/out out; fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
