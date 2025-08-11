@@ -1,6 +1,5 @@
 "use client"
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
-import Image from "next/image";
 import { BiMinus, BiPlus } from "react-icons/bi";
 
 import SectionTitle from "./SectionTitle";
