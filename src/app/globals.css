@@ -22,7 +22,7 @@ body {
   
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-sbaggro), 'SBAggro', sans-serif;
+  font-family: 'SBAggro', sans-serif;
   font-style: normal;
 }
 
@@ -34,11 +34,11 @@ body {
 
 /* 유틸 클래스: SB 어그로 Bold 강제 적용 */
 .sb-aggro-b {
-  font-family: var(--font-sbaggro), 'SBAggro', sans-serif !important;
+  font-family: 'SBAggro', sans-serif !important;
   font-weight: 700 !important;
 }
 .sb-aggro-l {
-  font-family: var(--font-sbaggro), 'SBAggro', sans-serif !important;
+  font-family: 'SBAggro', sans-serif !important;
   font-weight: 300 !important;
 }
 
@@ -50,7 +50,7 @@ body {
 
 .manrope {
   /* 프로젝트에서 사용하던 보조 클래스: SB 어그로 Light로 통일 */
-  font-family: var(--font-sbaggro), 'SBAggro', sans-serif;
+  font-family: 'SBAggro', sans-serif;
   font-style: normal;
 }
 

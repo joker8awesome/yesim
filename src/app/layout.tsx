@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google';
-import localFont from 'next/font/local';
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -34,15 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-const sbAggro = localFont({
-  src: [
-    { path: '/fonts/SBAggroL.ttf', weight: '300', style: 'normal' },
-    { path: '/fonts/SBAggroB.ttf', weight: '700', style: 'normal' },
-  ],
-  variable: '--font-sbaggro',
-  display: 'swap',
-});
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`antialiased font-sans ${sbAggro.variable}`}>
+      <body className={"antialiased font-sans"}>
         {siteDetails.googleAnalyticsId && <GoogleAnalytics gaId={siteDetails.googleAnalyticsId} />}
         <Header />
         <main>
