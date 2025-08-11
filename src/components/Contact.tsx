@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import SectionTitle from './SectionTitle';
+import dynamic from 'next/dynamic';
+
+const NaverMap = dynamic(() => import('./NaverMap'), { ssr: false });
 
 const Contact: React.FC = () => {
   return (
@@ -19,7 +22,7 @@ const Contact: React.FC = () => {
 
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           <div className="aspect-[16/9] w-full overflow-hidden rounded-xl shadow">
-            <iframe title="네이버 지도" src="https://map.naver.com/v5/search/%EC%98%88%EC%8B%AC%EC%9A%94%EC%96%91%EC%9B%90" className="w-full h-full border-0" allowFullScreen />
+            <NaverMap />
           </div>
           <div className="text-foreground-accent">
             <h3 className="text-xl font-semibold text-foreground">주소 및 안내</h3>
