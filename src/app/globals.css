@@ -64,13 +64,11 @@ body {
   @apply mb-10;
 }
 
-/* SB 어그로 웹폰트 선언 (CDN 우선, 로컬 폴백) */
+/* SB 어그로 웹폰트 선언 (로컬 고정, GitHub Pages basePath=/yesim) */
 @font-face {
   font-family: 'SBAggro';
   src:
-    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/SB_Aggro_L.woff') format('woff'),
-    url('/fonts/SBAggroL.woff') format('woff'),
-    url('/fonts/SBAggroL.ttf') format('truetype');
+    url('/yesim/fonts/SBAggroL.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -92,9 +90,7 @@ body {
 @font-face {
   font-family: 'SBAggro';
   src:
-    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2107@1.1/SB_Aggro_B.woff') format('woff'),
-    url('/fonts/SBAggroB.woff') format('woff'),
-    url('/fonts/SBAggroB.ttf') format('truetype');
+    url('/yesim/fonts/SBAggroB.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
