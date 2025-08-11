@@ -31,7 +31,7 @@ jobs:
 
       - name: Build static site
         env:
-          BASE_PATH: ''
+          BASE_PATH: '/yesim'
         run: |
           npm run build
           npx next export -o out
