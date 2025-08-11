@@ -10,6 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
+  metadataBase: new URL(siteDetails.siteUrl || 'https://example.com'),
   openGraph: {
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
