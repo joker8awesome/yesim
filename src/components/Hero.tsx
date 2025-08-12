@@ -36,8 +36,8 @@ const Hero: React.FC = () => {
                 <h1 className="text-4xl md:text-6xl md:leading-tight font-bold text-foreground max-w-lg md:max-w-2xl mx-auto sb-aggro-b whitespace-pre-line">{heroDetails.heading}</h1>
                 <p className="mt-4 text-foreground max-w-lg mx-auto whitespace-pre-line">{heroDetails.subheading}</p>
                 <div className="mt-6 flex flex-col sm:flex-row items-center sm:gap-4 w-fit mx-auto">
-                    <Link href="#contact" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors text-lg">문의하기</Link>
-                    <Link href="#faq" className="text-white bg-secondary hover:opacity-90 px-8 py-3 rounded-full transition-colors text-lg">자주묻는질문</Link>
+                    <Link href="#contact" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors text-lg btn-interactive">문의하기</Link>
+                    <Link href="#faq" className="text-white bg-secondary hover:opacity-90 px-8 py-3 rounded-full transition-colors text-lg btn-interactive">자주묻는질문</Link>
                 </div>
                 {/* 슬라이드 배너 */}
                 {heroSlides && heroSlides.length > 0 ? (

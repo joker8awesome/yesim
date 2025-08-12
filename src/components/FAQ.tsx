@@ -21,8 +21,8 @@ const FAQ: React.FC = () => {
                         무엇이든 편하게 문의하세요.
                     </p>
                     <div className="mt-4 flex flex-col items-center lg:items-start justify-center lg:justify-start gap-3">
-                        <a href="tel:010-1234-5678" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors text-lg w-full sm:w-auto text-center">📞 전화 상담</a>
-                        <a href="https://pf.kakao.com/_your_channel" target="_blank" className="text-white bg-secondary hover:opacity-90 px-8 py-3 rounded-full transition-colors text-lg w-full sm:w-auto text-center">💬 카카오톡 상담</a>
+                        <a href="tel:010-1234-5678" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors text-lg w-full sm:w-auto text-center btn-interactive">📞 전화 상담</a>
+                        <a href="https://pf.kakao.com/_your_channel" target="_blank" className="text-white bg-secondary hover:opacity-90 px-8 py-3 rounded-full transition-colors text-lg w-full sm:w-auto text-center btn-interactive">💬 카카오톡 상담</a>
                     </div>
                 </div>
 
